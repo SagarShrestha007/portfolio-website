@@ -6,6 +6,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+	<style>
+		/* Project Card Styles */
+		.project-card {
+			position: relative;
+			display: block;
+			height: 250px;
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			overflow: hidden;
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		.project-card:hover {
+			transform: scale(1.05);
+			box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+		}
+
+		.project-card .overlay {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 20px;
+			background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+			box-sizing: border-box;
+		}
+
+		.project-card h3 {
+			margin: 0 0 10px;
+			font-size: 1.4em;
+		}
+
+		.project-card p {
+			margin: 0;
+			font-size: 0.95em;
+		}
+	</style>
 </head>
 <body class="is-preload">
 
@@ -45,37 +86,47 @@
 		<section id="two">
 			<h2>Recent Projects</h2>
 			<div class="row">
+
+				<!-- Portfolio Website -->
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/01.jpg" class="image fit thumb">
-						<img src="images/thumbs/01.jpg" alt="" />
+					<a href="https://github.com/SagarShrestha007/portfolio-website" target="_blank" class="project-card" style="background-image: url('images/bg.jpg');">
+						<div class="overlay">
+							<h3>Portfolio Website</h3>
+							<p>A responsive personal website showcasing my skills and projects, built with HTML, CSS, and JavaScript.</p>
+						</div>
 					</a>
-					<h3>AWS Cloud Architecture</h3>
-					<p>Designed highly available and fault-tolerant architectures using AWS services.</p>
 				</article>
 
+				<!-- Azure-first-VM -->
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/02.jpg" class="image fit thumb">
-						<img src="images/thumbs/02.jpg" alt="" />
+					<a href="https://github.com/SagarShrestha007/Azure-first-VM" target="_blank" class="project-card" style="background-image: url('images/bg.jpg');">
+						<div class="overlay">
+							<h3>Azure-first-VM</h3>
+							<p>Demonstrated deployment of a portfolio site on Azure VM with Nginx, part of CI/CD learning.</p>
+						</div>
 					</a>
-					<h3>CI/CD Pipeline</h3>
-					<p>Implemented automated CI/CD pipelines using GitHub Actions and AWS.</p>
 				</article>
 
+				<!-- CI/CD Workflow Lab -->
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/03.jpg" class="image fit thumb">
-						<img src="images/thumbs/03.jpg" alt="" />
+					<a href="https://github.com/SagarShrestha007/CI-CD-Workflow-Lab" target="_blank" class="project-card" style="background-image: url('images/bg.jpg');">
+						<div class="overlay">
+							<h3>CI/CD Workflow Lab</h3>
+							<p>Experimented with CI/CD pipelines and automated deployment workflows using GitHub Actions.</p>
+						</div>
 					</a>
-					<h3>Infrastructure as Code</h3>
-					<p>Provisioned cloud resources using Terraform and AWS CloudFormation.</p>
 				</article>
 
+				<!-- IoT Air Quality Monitoring -->
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/04.jpg" class="image fit thumb">
-						<img src="images/thumbs/04.jpg" alt="" />
+					<a href="https://github.com/SagarShrestha007/IoT-Air-Quality-Monitoring" target="_blank" class="project-card" style="background-image: url('images/bg.jpg');">
+						<div class="overlay">
+							<h3>IoT Air Quality Monitoring</h3>
+							<p>Integrated multiple sensors using ESP32 to monitor AQI, collect, analyze, and visualize air quality data.</p>
+						</div>
 					</a>
-					<h3>Monitoring & Security</h3>
-					<p>Implemented logging, monitoring, and security best practices on AWS.</p>
 				</article>
+
 			</div>
 		</section>
 
